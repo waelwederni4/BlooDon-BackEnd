@@ -1,0 +1,12 @@
+{
+  "functions": {
+    "runtime": "nodejs8",
+    "predeploy": [
+      "npm --prefix \"$RESOURCE_DIR\" run lint"
+    ],
+    "source": "functions"
+  },
+  "remoteconfig": {
+    "template": "remoteconfig.template.json"
+  }
+}
